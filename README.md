@@ -2,7 +2,7 @@
 
 The goal of this project is to deploy a static website for Elite Corporation on an AWS EC2 instance using Apache2 as the web server, secured with HTTPS via Certbot. The website includes a company banner ("Welcome to Elite Corporation"), sections for About Us, Services, and Contact, and is styled with CSS for a clean, modern look. The project involves setting up an Ubuntu server, installing Apache2, deploying the website to /var/www/html, configuring DNS for public accessibility, and securing the site with a Let’s Encrypt SSL certificate. This documentation outlines the step-by-step process I followed.
 
-##TOOLS AND EXPECTED FUNCTIONS
+#TOOLS AND EXPECTED FUNCTIONS
 
 
 The tools I used for this project are:
