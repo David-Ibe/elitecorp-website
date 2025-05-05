@@ -30,7 +30,7 @@ AWS (EC2, Security Groups), Linux (Ubuntu), Apache2, HTML/CSS, Certbot/Let’s E
 | 1   | Launch an Ubuntu server on AWS EC2         |
 | 2   | Install and configure Apache2              |
 | 3   | Deploy the Elite Corporation website       |
-| 4   | Set up DNS for `elitecorp.ml`             |
+| 4   | Set up DNS for the website             |
 | 5   | Secure the site with Certbot for HTTPS     |
 | 6   | Validate the website’s accessibility       |
 
