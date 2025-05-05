@@ -2,7 +2,7 @@
 
 The goal of this project is to deploy a static website for Elite Corporation on an AWS EC2 instance using Apache2 as the web server, secured with HTTPS via Certbot. The website includes a company banner ("Welcome to Elite Corporation"), sections for About Us, Services, and Contact, and is styled with CSS for a clean, modern look. The project involves setting up an Ubuntu server, installing Apache2, deploying the website to /var/www/html, configuring DNS for public accessibility, and securing the site with a Let’s Encrypt SSL certificate. This documentation outlines the step-by-step process I followed.
 
-#TOOLS AND EXPECTED FUNCTIONS
+**TOOLS AND EXPECTED FUNCTIONS**
 
 
 The tools I used for this project are:
@@ -17,7 +17,7 @@ The tools I used for this project are:
    Certbot, paired with Let’s Encrypt, automates the process of obtaining and installing SSL certificates to enable HTTPS. It interacts with Apache2 to secure the website, ensuring encrypted communication between the server and users, despite challenges with DNS validation.
 
 4) **DNS (FREENOM)**  
-   Freenom provides the free domain `elitecorrr.ml`, allowing users to access the website via a custom URL instead of an IP address. It manages DNS records to map the domain to the EC2 instance, though propagation delays posed challenges.
+   Freenom provides the free domain, allowing users to access the website via a custom URL instead of an IP address. It manages DNS records to map the domain to the EC2 instance, though propagation delays posed challenges.
 
 ## CONCEPTS COVERED
 
