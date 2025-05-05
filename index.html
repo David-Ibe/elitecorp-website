@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Corporation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #005b96; /* Tech blue background */
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #1a3c34;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00c4b4;
+        }
+
+        /* Hero Banner */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #1a3c34;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #00c4b4;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+
+        p, li {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        /* Services Section - Grid Layout */
+        #services ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        #services li {
+            background-color: #e6f3f2;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        #services li:hover {
+            background-color: #00c4b4;
+            color: white;
+        }
+
+        /* Contact Section */
+        #contact p {
+            font-size: 1.1rem;
+        }
+
+        #contact p::before {
+            content: '→ ';
+            color: #00c4b4;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a3c34;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2rem;
+            }
+
+            .banner p {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            main {
+                padding: 1.5rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .banner h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            #services ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="banner">
+            <h1>Welcome to Elite Corporation</h1>
+            <p>Your Partner in Innovation and Excellence</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Elite Corporation is a leading provider of innovative solutions, dedicated to delivering excellence in every project. With years of experience, we strive to exceed our clients' expectations through cutting-edge technology and personalized service.</p>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Consulting</li>
+                <li>Web Development</li>
+                <li>Digital Marketing</li>
+                <li>Cloud Solutions</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: info@elitecorp.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Business Ave, Suite 100, City, Country</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Elite Corporation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
