@@ -98,7 +98,7 @@ sudo chown -R www-data:www-data /var/www/html
 sudo chmod -R 755 /var/www/html
 
 
-##TASK-3: DEPLOY THE STATIC WEBSITE
+**TASK-3: DEPLOY THE STATIC WEBSITE**
 
 - I created and deployed the Elite Corporation static website to /var/www/html.
 
